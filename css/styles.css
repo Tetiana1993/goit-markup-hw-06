@@ -62,7 +62,6 @@ img {
   background: #fff;
   padding-top: 16px;
   padding-bottom: 16px;
-  /* padding: 24px 0; */
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -671,8 +670,8 @@ img {
 }
 
 .modal {
-  width: 408px;
-  min-height: 584px;
+  width: 288px;
+  min-height: 623px;
   border-radius: 4px;
   background-color: #fcfcfc;
   position: absolute;
@@ -870,7 +869,8 @@ img {
   .container {
     max-width: 768px;
   }
-
+  .title {
+  }
   .navigation {
     display: flex;
     align-items: center;
@@ -908,7 +908,7 @@ img {
     border-radius: 2px;
     background: #404bbf;
     left: 0;
-    bottom: -1px;
+    bottom: -12px;
   }
   .contact-menu {
     display: flex;
@@ -981,6 +981,10 @@ img {
   .form-title {
     text-align: left;
   }
+  .modal {
+    width: 408px;
+    min-height: 584px;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -988,6 +992,16 @@ img {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .title {
+    padding: 24px 0;
+  }
+  .current::after {
+    bottom: -1px;
+  }
+  .contact-menu {
+    flex-direction: row;
+    gap: 40px;
   }
   .main-page {
     padding-top: 188px;
